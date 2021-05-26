@@ -1,0 +1,8 @@
+---
+ - hosts: webservers
+   tasks:
+   - name: Ansible zip file example
+     archive:
+      path: /india/welcome.txt
+      dest: /india/welcome.zip
+      format: zip

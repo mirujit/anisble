@@ -1,0 +1,5 @@
+---
+- hosts: webservers
+  tasks:
+  - name: Install Package
+    yum: name=vim,git state=latest
