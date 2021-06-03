@@ -1,0 +1,11 @@
+---
+ - name: Launching the AWS Instance
+   hosts: localhost
+   tasks:
+   - name: Stop the Ec2 Instance
+     ec2:
+      instance_ids: i-0d5a3a84ef7ea1698
+      region: ap-south-1
+      state: running
+      aws_access_key: AKIASD6NI2BUXNRUW2YY
+      aws_secret_key: 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

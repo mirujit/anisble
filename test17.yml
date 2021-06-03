@@ -1,0 +1,15 @@
+---
+ - name: Launching the AWS Instance
+   hosts: localhost
+   tasks:
+   - name: Launch the AWS Instance
+     ec2:
+      key_name: docker
+      region: ap-south-1
+      instance_type: t2.micro
+      image: ami-010aff33ed5991201
+      count: 2
+      vpc_subnet_id: subnet-eac52281
+      assign_public_ip: yes
+      aws_access_key: AKIASD6NI2BUXNRUW2YY
+      aws_secret_key: 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

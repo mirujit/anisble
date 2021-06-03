@@ -1,0 +1,7 @@
+---
+  - hosts: mobileserver
+    tasks:
+    - name: Update apt-cache
+      apt: update_cache=yes
+    - name: Install apache2
+      apt: name=apache2 state=absent
